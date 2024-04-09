@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h4>Default table syntax without border</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Employee Name</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Cillian</td>
+                <td>Tech lead</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Murphy</td>
+                <td>developer</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h4>Default table syntax with outer border</h4>
+    <table frame="box">
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Employee Name</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Cillian</td>
+                <td>Tech lead</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Murphy</td>
+                <td>developer</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h4>Default table syntax with all borders with inner cell border collapsed</h4>
+    <table style="border: 1px solid red; border-collapse:collapse ;">
+        <thead>
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <th style="border: 1px solid red; border-collapse:collapse ;">Sl No</th>
+                <th style="border: 1px solid red; border-collapse:collapse ;">Employee Name</th>
+                <th style="border: 1px solid red; border-collapse:collapse ;">Designation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <td style="border: 1px solid red; border-collapse:collapse ;">1</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Cillian</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Tech lead</td>
+            </tr>
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <td style="border: 1px solid red; border-collapse:collapse ;">2</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Murphy</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">developer</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h4>Default table syntax with all borders with inner cell border</h4>
+    <table style="border: 1px solid red; border-collapse:separate ;">
+        <thead>
+            <tr style="border: 1px solid red; border-collapse:separate ;">
+                <th style="border: 1px solid red; border-collapse:separate ;">Sl No</th>
+                <th style="border: 1px solid red; border-collapse:separate ;">Employee Name</th>
+                <th style="border: 1px solid red; border-collapse:separate ;">Designation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr style="border: 1px solid red; border-collapse:separate ;">
+                <td style="border: 1px solid red; border-collapse:separate ;">1</td>
+                <td style="border: 1px solid red; border-collapse:separate ;">Cillian</td>
+                <td style="border: 1px solid red; border-collapse:separate ;">Tech lead</td>
+            </tr>
+            <tr style="border: 1px solid red; border-collapse:separate ;">
+                <td style="border: 1px solid red; border-collapse:separate ;">2</td>
+                <td style="border: 1px solid red; border-collapse:separate ;">Murphy</td>
+                <td style="border: 1px solid red; border-collapse:separate ;">developer</td>
+            </tr>
+            <tr>
+                <td>total employees</td>
+                <td rowspan="1">
+                    total employees
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h3>Colspan Table example</h3>
+    <table>
+        
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <th style="border: 1px solid red; border-collapse:collapse ;" colspan="2">Name</th>
+                <th style="border: 1px solid red; border-collapse:collapse ;">Age</th>
+                
+            </tr>
+       
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <td style="border: 1px solid red; border-collapse:collapse ;">jill</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Cillian</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">43</td>
+            </tr>
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <td style="border: 1px solid red; border-collapse:collapse ;">Eve</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Jack</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">23</td>
+            </tr>
+    </table>
+
+    <h3>rowspan Table example</h3>
+    <table>
+        
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <th style="border: 1px solid red; border-collapse:collapse ;" colspan="2">Name</th>
+                <th style="border: 1px solid red; border-collapse:collapse ;">Age</th>
+                <th rowspan="2" style="border: 1px solid red; border-collapse:collapse ;">Phone no</th>
+                
+            </tr>
+       
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <td style="border: 1px solid red; border-collapse:collapse ;">jill</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Cillian</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">43</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">43789456</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">434561</td>
+            </tr>
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <td style="border: 1px solid red; border-collapse:collapse ;">Eve</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Jack</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">23</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">43321654</td>
+                <td style="border: 1px solid red; border-collapse:collapse ;">43216543</td>
+            </tr>
+    </table>
+    <h3>rowspan Table example</h3>
+    <table style="border: 1px solid red; border-collapse:collapse ;">
+        
+            <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <th style="border: 1px solid red; border-collapse:collapse ;" >Name</th>
+                <td style="border: 1px solid red; border-collapse:collapse ;">Jill</td>
+                </tr>
+                <tr style="border: 1px solid red; border-collapse:collapse ;">
+                <th rowspan="2" style="border: 1px solid red; border-collapse:collapse ;">Phone no</th>
+                <td style="border: 1px solid red; border-collapse:collapse ;">55589645</td>
+                </tr>
+                <tr style="border: 1px solid red; border-collapse:collapse ;">
+                    <td style="border: 1px solid red; border-collapse:collapse ;">456123789</td>
+                </tr>
+        
+    </table>
+</body>
+</html>
